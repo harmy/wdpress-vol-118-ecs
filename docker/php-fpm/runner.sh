@@ -53,7 +53,7 @@ fi
 if [ "$env" != "local" ]; then
     if [ -f "${ARTISAN_PATH}" ]; then
         write_log "設定のキャッシュを実施"
-        php ${ARTISAN_PATH} config.cache &&
+        php ${ARTISAN_PATH} config:cache &&
             php ${ARTISAN_PATH} route:cache &&
             php ${ARTISAN_PATH} view:cache
     fi

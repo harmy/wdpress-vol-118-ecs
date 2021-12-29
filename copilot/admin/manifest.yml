@@ -1,4 +1,4 @@
-name: web
+name: admin
 type: Load Balanced Web Service
 
 image:
@@ -14,7 +14,7 @@ http:
   path: '/'
   healthcheck: '/healthcheck.txt'
   targetContainer: 'nginx'
-  alias: phpinfo.circsr.com
+  alias: phpinfo2.circsr.com
 
 cpu: 256
 memory: 512
